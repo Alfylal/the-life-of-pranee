@@ -52,7 +52,6 @@
         
         <section id="hero" class="min-h-screen flex flex-col justify-between relative overflow-hidden">
             <div id="hero-image-container" class="absolute inset-y-0 left-0 w-full lg:w-[55%] overflow-hidden pointer-events-none opacity-0 transition-opacity duration-[2000ms] z-0">
-                <img src="assets/hero/hero-city.jpeg" alt="Pranee" class="w-full h-full object-cover transform scale-100 origin-center" id="hero-img">
                 <div class="absolute inset-y-0 right-0 w-[40%] bg-gradient-to-r from-transparent to-brand-dark"></div>
                 <div class="absolute inset-x-0 bottom-0 h-[30%] bg-gradient-to-t from-brand-dark to-transparent"></div>
                 <div class="absolute inset-0 bg-[radial-gradient(circle_at_35%_45%,transparent_20%,rgba(11,11,13,0.45)_65%)]"></div>
@@ -63,7 +62,7 @@
             <div class="w-full max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-20 flex-grow flex items-center relative z-10">
                 <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-24 items-center w-full">
                     <div class="lg:col-span-6 h-[40vh] lg:h-auto flex justify-center w-full order-2 lg:order-1 opacity-0 translate-y-8 transition-all duration-[2000ms] ease-out" id="hero-left"></div>
-                    <div class="lg:col-span-6 flex flex-col justify-center text-left space-y-8 lg:space-y-12 order-1 lg:order-2 opacity-0 translate-y-8 transition-all duration-[2000ms] ease-out delay-500" id="hero-right">
+                    <div class="lg:col-span-6 flex flex-col justify-center text-left space-y-8 lg:space-y-12 order-1 lg:order-2 opacity-0 translate-y-8 transition-all duration-[2000ms] ease-out delay-[...]">
                         <div class="space-y-4">
                             <span class="text-[11px] md:text-xs tracking-[0.4em] text-brand-gold uppercase font-semibold">The Life Of</span>
                             <h1 class="text-5xl md:text-7xl lg:text-8xl font-serif font-light tracking-tight leading-none text-white select-none">Pranee</h1>
@@ -110,20 +109,19 @@
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-0 items-center flex-grow w-full py-12">
                 <div class="lg:col-span-5 flex justify-center w-full order-1 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out reveal-el" id="bio-portrait-container">
                     <div class="relative w-full aspect-[2/3] max-w-[380px] lg:max-w-full rounded-2xl overflow-hidden shadow-[0_30px_70px_-10px_rgba(0,0,0,0.85)] border border-white/5 group">
-                        <div id="bio-portrait-fallback" class="absolute inset-0 portrait-placeholder rounded-2xl flex flex-col items-center justify-center p-8 group-hover:border-brand-gold/30 transition-colors duration-700 hidden">
+                        <div id="bio-portrait-fallback" class="absolute inset-0 portrait-placeholder rounded-2xl flex flex-col items-center justify-center p-8 group-hover:border-brand-gold/30 transition-all duration-500">
                             <div class="absolute inset-4 border border-brand-gold/5 pointer-events-none rounded-xl"></div>
                             <svg class="w-16 h-16 text-brand-gold/20 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="0.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                             </svg>
                             <span class="text-xs tracking-[0.3em] text-neutral-500 uppercase font-light">Portrait Placeholder</span>
                         </div>
-                        <img src="assets/portraits/pranee-smile.jpeg" alt="Pranee" class="absolute inset-0 w-full h-full object-cover object-center rounded-2xl transform scale-100 transition-transform duration-[8000ms] ease-out group-hover:scale-105" id="bio-portrait-img">
                         <div class="absolute inset-0 bg-gradient-to-t from-brand-dark/50 via-transparent to-brand-dark/25 pointer-events-none z-10 rounded-2xl"></div>
                         <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_45%,rgba(11,11,13,0.55)_100%)] pointer-events-none z-10 rounded-2xl"></div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center text-left space-y-8 order-2 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out delay-300 reveal-el" id="bio-content">
+                <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center text-left space-y-8 order-2 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out delay-300 reveal-el">
                     <div class="space-y-4">
                         <div class="w-8 h-[1px] bg-brand-gold"></div>
                         <span class="text-[11px] md:text-xs tracking-[0.4em] text-brand-gold uppercase font-semibold block">Biography</span>
@@ -161,20 +159,17 @@
                 <div class="lg:col-span-5 flex justify-center w-full order-1 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out reveal-el" id="collage-container">
                     <div class="engineering-visual w-full max-w-[500px] lg:max-w-full">
                         <div class="engineering-visual__featured">
-                            <img src="assets/engineering/heli1.jpg" alt="Featured engineering photograph" class="engineering-visual__image">
                         </div>
                         <div class="engineering-visual__supporting">
                             <div class="engineering-visual__card">
-                                <img src="assets/engineering/heli3.jpg" alt="Supporting engineering photograph" class="engineering-visual__image engineering-visual__image--contain">
                             </div>
                             <div class="engineering-visual__card">
-                                <img src="assets/engineering/IMG20191105204521.jpg" alt="Supporting engineering detail photograph" class="engineering-visual__image engineering-visual__image--contain">
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center text-left space-y-8 order-2 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out delay-300 reveal-el" id="chapter2-text-content">
+                <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center text-left space-y-8 order-2 opacity-0 translate-y-8 transition-all duration-[2500ms] ease-out delay-300 reveal-el">
                     <div class="space-y-4">
                         <div class="w-8 h-[1px] bg-brand-gold"></div>
                         <span class="text-[11px] md:text-xs tracking-[0.4em] text-brand-gold uppercase font-semibold block">Always Curious</span>
@@ -190,7 +185,7 @@
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-16 pt-16 border-t border-white/5 w-full reveal-el opacity-0 translate-y-8 transition-all duration-[2000ms] ease-out" id="feature-grid">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mt-16 pt-16 border-t border-white/5 w-full reveal-el opacity-0 translate-y-8 transition-all duration-[2000ms] ease-out">
                 <div class="space-y-4 group p-6 rounded-sm bg-white/[0.01] hover:bg-white/[0.03] border border-white/[0.03] hover:border-brand-gold/10 transition-all duration-500">
                     <div class="text-3xl text-brand-gold filter drop-shadow-[0_2px_8px_rgba(212,175,55,0.2)]">⚙</div>
                     <h3 class="text-lg font-serif font-light text-white tracking-wide">Mechanical Engineering</h3>
@@ -224,617 +219,426 @@
                 <span class="text-xs md:text-sm tracking-[0.5em] text-brand-gold uppercase font-semibold">Chapter III</span>
                 <h2 class="text-4xl md:text-6xl font-serif font-light text-white leading-tight tracking-wide max-w-xl">The Hands That Created</h2>
                 <div class="w-12 h-[1px] bg-brand-gold/30 my-4"></div>
-                <p class="text-lg md:text-xl text-neutral-400 font-light font-serif italic leading-relaxed">Every drawing told a story beyond words.<br>Art was one of Pranee's quiet passions. Through sketches and careful observation, he transformed ordinary moments into meaningful creations.<br>Each piece reflects patience, imagination and an appreciation for the beauty found in everyday life.</p>
+                <p class="text-lg md:text-xl text-neutral-400 font-light font-serif italic leading-relaxed">Every drawing told a story beyond words.<br>Art was one of Pranee's quiet passions.</p>
             </div>
         </section>
 
         <!-- ========================= -->
-<!-- Chapter III Content -->
-<!-- ========================= -->
-
-        <section id="chapter-3-content"
-            class="min-h-screen flex flex-col justify-between px-6 py-16 md:py-24 max-w-7xl mx-auto relative">
-
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0 items-center flex-grow w-full py-12">
-
-                    
-            </div>
-
-                 
-
-                        <!-- ========================= -->
-<!-- Artwork Gallery -->
-<!-- ========================= -->
-
-<div class="mt-20">
-
-    <div class="mb-8 text-center">
-
-        <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
-            Gallery
-        </span>
-
-        <h3 class="text-2xl md:text-3xl font-serif text-white mt-4">
-            A Collection of His Artwork
-        </h3>
-
-    </div>
-
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-
-        <img src="assets/artwork/grandparents.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/badboys.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/che.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/eye.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/john.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/mementomori.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy"> 
-        <img src="assets/artwork/honai.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/jesus.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/buddy.jpg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-        <img src="assets/artwork/salim.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-        <img src="assets/artwork/alfysketch.jpeg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-    
-         <img src="assets/artwork/theyam.jpg"
-             class="rounded-xl cursor-pointer transition duration-500 hover:scale-105"
-             loading="lazy">
-
-    </div>
-
-</div>
-<div class="w-full flex flex-col items-center justify-center pt-20 pb-4">
-
-    <span class="text-[9px] tracking-[0.4em] text-neutral-500 uppercase">
-
-        Continue the Journey
-
-    </span>
-
-    <span class="text-brand-gold text-lg mt-2 animate-bounce-slow">
-
-        ↓
-
-    </span>
-
-</div>
-
-        
+        <!-- Chapter III Content -->
         <!-- ========================= -->
-<!-- Chapter IV Transition -->
-<!-- ========================= -->
 
-<section id="chapter-4-transition"
-    class="min-h-screen flex items-center justify-center px-6 py-20 text-center relative scroll-mt-10">
+        <section id="chapter-3-content" class="min-h-screen flex flex-col justify-between px-6 py-16 md:py-24 max-w-7xl mx-auto relative">
 
-    <div class="space-y-8 max-w-2xl transition-all duration-[2000ms] ease-out opacity-0 translate-y-12 reveal-el flex flex-col items-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0 items-center flex-grow w-full py-12">
+            </div>
 
-        <span class="text-xs md:text-sm tracking-[0.5em] text-brand-gold uppercase font-semibold">
-            Chapter IV
-        </span>
+            <!-- ========================= -->
+            <!-- Artwork Gallery -->
+            <!-- ========================= -->
 
-        <h2 class="text-4xl md:text-6xl font-serif font-light text-white leading-tight tracking-wide max-w-xl">
-            The People Who Shared His Journey
-        </h2>
+            <div class="mt-20">
 
-        <div class="w-12 h-[1px] bg-brand-gold/30"></div>
+                <div class="mb-8 text-center">
 
-        <p class="text-lg md:text-xl text-neutral-400 font-light font-serif italic leading-relaxed">
-            Every friendship became a chapter.<br>
-            Every smile became a memory.
-        </p>
+                    <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                        Gallery
+                    </span>
 
-    </div>
+                    <h3 class="text-2xl md:text-3xl font-serif text-white mt-4">
+                        A Collection of His Artwork
+                    </h3>
 
-</section>
-<!-- ========================= -->
-<!-- Chapter IV Content -->
-<!-- ========================= -->
+                </div>
 
-<section id="chapter-4-content"
-    class="min-h-screen flex flex-col justify-between px-6 py-16 md:py-24 max-w-7xl mx-auto relative">
-
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0 items-center flex-grow w-full py-12">
-
-        <!-- LEFT SIDE -->
-
-        <div class="lg:col-span-5 flex justify-center w-full">
-
-            <div class="relative w-full max-w-[520px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
-
-                <img
-                    src="assets/friends/frnd1.jpg"
-                    alt="Pranee with friends"
-                    class="w-full h-auto object-cover">
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Images removed -->
+                </div>
 
             </div>
 
-        </div>
+            <div class="w-full flex flex-col items-center justify-center pt-20 pb-4">
 
-        <!-- RIGHT SIDE -->
-
-        <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center space-y-8">
-
-            <div class="space-y-4">
-
-                <div class="w-8 h-[1px] bg-brand-gold"></div>
-
-                <span
-                    class="text-[11px] tracking-[0.4em] text-brand-gold uppercase font-semibold">
-
-                    Friendship
-
+                <span class="text-[9px] tracking-[0.4em] text-neutral-500 uppercase">
+                    Continue the Journey
                 </span>
 
-                <h2
-                    class="text-3xl md:text-5xl font-serif font-light text-white">
+                <span class="text-brand-gold text-lg mt-2 animate-bounce-slow">
+                    ↓
+                </span>
 
+            </div>
+
+        </section>
+
+        <!-- ========================= -->
+        <!-- Chapter IV Transition -->
+        <!-- ========================= -->
+
+        <section id="chapter-4-transition" class="min-h-screen flex items-center justify-center px-6 py-20 text-center relative scroll-mt-10">
+
+            <div class="space-y-8 max-w-2xl transition-all duration-[2000ms] ease-out opacity-0 translate-y-12 reveal-el flex flex-col items-center">
+
+                <span class="text-xs md:text-sm tracking-[0.5em] text-brand-gold uppercase font-semibold">
+                    Chapter IV
+                </span>
+
+                <h2 class="text-4xl md:text-6xl font-serif font-light text-white leading-tight tracking-wide max-w-xl">
                     The People Who Shared His Journey
-
                 </h2>
 
-            </div>
+                <div class="w-12 h-[1px] bg-brand-gold/30"></div>
 
-            <div
-                class="space-y-6 text-neutral-400 leading-[1.8] max-w-lg">
-
-                <p
-                    class="text-white text-lg font-serif italic">
-
-                    Some friendships are measured in years.
-                    Others are measured in unforgettable moments.
-
-                </p>
-
-                <p>
-
-                    Pranee valued genuine friendships.
-                    Whether sharing laughter, adventures, or quiet conversations,
-                    the people around him became an important part of his journey.
-
-                </p>
-
-                <p>
-
-                    These photographs capture moments that continue to remind us
-                    of his kindness, humour and the joy he brought to others.
-
+                <p class="text-lg md:text-xl text-neutral-400 font-light font-serif italic leading-relaxed">
+                    Every friendship became a chapter.<br>
+                    Every smile became a memory.
                 </p>
 
             </div>
 
-        </div>
+        </section>
 
-    </div> 
-        <!-- Friends Gallery -->
+        <!-- ========================= -->
+        <!-- Chapter IV Content -->
+        <!-- ========================= -->
 
-    <div class="mt-20">
+        <section id="chapter-4-content" class="min-h-screen flex flex-col justify-between px-6 py-16 md:py-24 max-w-7xl mx-auto relative">
 
-        <div class="mb-8 text-center">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-0 items-center flex-grow w-full py-12">
 
-            <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                <!-- LEFT SIDE -->
 
-                Memories
+                <div class="lg:col-span-5 flex justify-center w-full">
 
-            </span>
+                    <div class="relative w-full max-w-[520px] rounded-2xl overflow-hidden border border-white/10 shadow-[0_20px_60px_rgba(0,0,0,0.5)]">
+                    </div>
 
-            <h3 class="text-2xl md:text-3xl font-serif text-white mt-4">
+                </div>
 
-                Moments Together
+                <!-- RIGHT SIDE -->
 
-            </h3>
+                <div class="lg:col-span-6 lg:col-start-7 flex flex-col justify-center space-y-8">
 
-        </div>
+                    <div class="space-y-4">
 
-        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <div class="w-8 h-[1px] bg-brand-gold"></div>
 
-            <img src="assets/friends/bestfriend.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                        <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase font-semibold">
+                            Friendship
+                        </span>
 
-            <img src="assets/friends/george.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                        <h2 class="text-3xl md:text-5xl font-serif font-light text-white">
+                            The People Who Shared His Journey
+                        </h2>
 
-            <img src="assets/friends/frnd.5.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    </div>
 
-            <img src="assets/friends/frnd4.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    <div class="space-y-6 text-neutral-400 leading-[1.8] max-w-lg">
 
-            <img src="assets/friends/frnd5.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                        <p class="text-white text-lg font-serif italic">
+                            Some friendships are measured in years.
+                            Others are measured in unforgettable moments.
+                        </p>
 
-            <img src="assets/friends/elizabeth.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                        <p>
+                            Pranee valued genuine friendships.
+                            Whether sharing laughter, adventures, or quiet conversations,
+                            the people around him became an important part of his journey.
+                        </p>
 
-            <img src="assets/friends/frndarjun.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                        <p>
+                            These photographs capture moments that continue to remind us
+                            of his kindness, humour and the joy he brought to others.
+                        </p>
 
-            <img src="assets/friends/frnd.12.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    </div>
 
-            
-        </div>
+                </div>
 
-    </div>
+            </div>
 
-    <div class="w-full flex flex-col items-center justify-center pt-20 pb-4">
+            <!-- Friends Gallery -->
 
-    <span class="text-[9px] tracking-[0.4em] text-neutral-500 uppercase">
+            <div class="mt-20">
 
-        Continue the Journey
+                <div class="mb-8 text-center">
 
-    </span>
+                    <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                        Memories
+                    </span>
 
-    <span class="text-brand-gold text-lg mt-2 animate-bounce-slow">
+                    <h3 class="text-2xl md:text-3xl font-serif text-white mt-4">
+                        Moments Together
+                    </h3>
 
-        ↓
+                </div>
 
-    </span>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Images removed -->
+                </div>
 
-</div>
+            </div>
 
-</section>
+            <div class="w-full flex flex-col items-center justify-center pt-20 pb-4">
 
-                <!-- ========================= -->
-<!-- Chapter V Transition -->
-<!-- ========================= -->
+                <span class="text-[9px] tracking-[0.4em] text-neutral-500 uppercase">
+                    Continue the Journey
+                </span>
 
-<section id="chapter-5-transition"
-class="min-h-screen flex items-center justify-center px-6 py-20 text-center relative scroll-mt-10">
+                <span class="text-brand-gold text-lg mt-2 animate-bounce-slow">
+                    ↓
+                </span>
 
-    <div class="space-y-8 max-w-2xl transition-all duration-[2000ms] ease-out opacity-0 translate-y-12 reveal-el flex flex-col items-center">
+            </div>
 
-        <span class="text-xs md:text-sm tracking-[0.5em] text-brand-gold uppercase font-semibold">
-            Chapter V
-        </span>
+        </section>
 
-        <h2 class="text-4xl md:text-6xl font-serif font-light text-white">
-            Where He Belonged
-        </h2>
+        <!-- ========================= -->
+        <!-- Chapter V Transition -->
+        <!-- ========================= -->
 
-        <div class="w-12 h-[1px] bg-brand-gold/30"></div>
+        <section id="chapter-5-transition" class="min-h-screen flex items-center justify-center px-6 py-20 text-center relative scroll-mt-10">
 
-        <p class="text-lg md:text-xl text-neutral-400 font-serif italic">
-            Home is not a place.<br>
-            It is the people who love us.
-        </p>
+            <div class="space-y-8 max-w-2xl transition-all duration-[2000ms] ease-out opacity-0 translate-y-12 reveal-el flex flex-col items-center">
 
-    </div>
+                <span class="text-xs md:text-sm tracking-[0.5em] text-brand-gold uppercase font-semibold">
+                    Chapter V
+                </span>
 
-</section>
+                <h2 class="text-4xl md:text-6xl font-serif font-light text-white">
+                    Where He Belonged
+                </h2>
 
-  <!-- ========================= -->
-<!-- Chapter V Content -->
-<!-- ========================= -->
+                <div class="w-12 h-[1px] bg-brand-gold/30"></div>
 
-<!-- ========================= -->
-<!-- Chapter V Featured Family -->
-<!-- ========================= -->
-
-<section id="chapter-5-content"
-    class="min-h-screen max-w-7xl mx-auto px-6 py-20">
-
-    <!-- Featured Photos -->
-
-    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
-
-        <!-- Card 1 -->
-
-        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
-
-            <img
-                src="assets/family/fam1.jpeg"
-                alt="Pranee with Mother and Brother"
-                class="w-full h-[500px] object-cover">
-
-            <div class="p-6">
-
-                <h3 class="text-2xl font-serif text-white mb-3">
-                    The Ones Who Walked Beside Him
-                </h3>
-
-                <p class="text-neutral-400 leading-relaxed">
-                    Through every season of life, their love, guidance and support remained constant.
-                    These moments reflect the bond that words can never fully describe.
+                <p class="text-lg md:text-xl text-neutral-400 font-serif italic">
+                    Home is not a place.<br>
+                    It is the people who love us.
                 </p>
 
             </div>
 
-        </div>
+        </section>
 
-        <!-- Card 2 -->
+        <!-- ========================= -->
+        <!-- Chapter V Content -->
+        <!-- ========================= -->
 
-        <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+        <!-- ========================= -->
+        <!-- Chapter V Featured Family -->
+        <!-- ========================= -->
 
-            <img
-                src="assets/family/sittingappachai.jpeg"
-                alt="Family Together"
-                class="w-full h-[500px] object-cover">
+        <section id="chapter-5-content" class="min-h-screen max-w-7xl mx-auto px-6 py-20">
 
-            <div class="p-6">
+            <!-- Featured Photos -->
 
-                <h3 class="text-2xl font-serif text-white mb-3">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-20">
+
+                <!-- Card 1 -->
+
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-serif text-white mb-3">
+                            The Ones Who Walked Beside Him
+                        </h3>
+
+                        <p class="text-neutral-400 leading-relaxed">
+                            Through every season of life, their love, guidance and support remained constant.
+                            These moments reflect the bond that words can never fully describe.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="rounded-2xl overflow-hidden border border-white/10 bg-white/[0.02] shadow-[0_20px_60px_rgba(0,0,0,0.45)]">
+
+                    <div class="p-6">
+
+                        <h3 class="text-2xl font-serif text-white mb-3">
+                            Family
+                        </h3>
+
+                        <p class="text-neutral-400 leading-relaxed">
+                            Grandparents, cousins and every cherished gathering created memories that will always remain part of Pranee's story.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Story -->
+
+            <div class="max-w-4xl mx-auto text-center mb-24">
+
+                <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
                     Family
-                </h3>
+                </span>
 
-                <p class="text-neutral-400 leading-relaxed">
-                    Grandparents, cousins and every cherished gathering created memories that will always remain part of Pranee's story.
+                <h2 class="text-4xl md:text-5xl font-serif text-white mt-5 mb-8">
+                    Where He Belonged
+                </h2>
+
+                <p class="text-neutral-400 leading-8 mb-6">
+                    Family was always the place where Pranee could simply be himself.
+                    Every celebration, every quiet evening and every shared smile became
+                    part of the memories that continue to live on.
                 </p>
+
+                <p class="text-neutral-400 leading-8 mb-8">
+                    Love is remembered not through grand moments alone,
+                    but through everyday conversations, laughter around the table,
+                    and the comfort of simply being together.
+                </p>
+
+                <blockquote class="font-serif italic text-2xl text-white">
+                    "Home is where love never leaves."
+                </blockquote>
 
             </div>
 
-        </div>
+            <!-- ========================= -->
+            <!-- Family Gallery -->
+            <!-- ========================= -->
 
-    </div>
+            <div class="mb-24">
 
-    <!-- Story -->
+                <div class="text-center mb-12">
 
-    <div class="max-w-4xl mx-auto text-center mb-24">
+                    <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                        Family Album
+                    </span>
 
-        <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                    <h3 class="text-3xl font-serif text-white mt-4">
+                        Moments That Will Always Be Home
+                    </h3>
 
-            Family
+                </div>
 
-        </span>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    <!-- Images and videos removed -->
+                </div>
 
-        <h2 class="text-4xl md:text-5xl font-serif text-white mt-5 mb-8">
+            </div>
 
-            Where He Belonged
+        </section>
 
-        </h2>
+        <!-- ========================= -->
+        <!-- Final Tribute -->
+        <!-- ========================= -->
 
-        <p class="text-neutral-400 leading-8 mb-6">
+        <section id="tribute" class="min-h-screen flex items-center justify-center px-6 py-24">
 
-            Family was always the place where Pranee could simply be himself.
-            Every celebration, every quiet evening and every shared smile became
-            part of the memories that continue to live on.
+            <div class="max-w-3xl mx-auto text-center">
 
-        </p>
+                <h2 class="text-5xl md:text-6xl font-serif text-white mb-8">
+                    Thank You
+                </h2>
 
-        <p class="text-neutral-400 leading-8 mb-8">
+                <blockquote class="text-2xl font-serif italic text-neutral-300 leading-relaxed mb-12">
+                    "Some people leave quietly,
+                    yet the memories they create
+                    continue to speak."
+                </blockquote>
 
-            Love is remembered not through grand moments alone,
-            but through everyday conversations, laughter around the table,
-            and the comfort of simply being together.
+                <p class="text-neutral-400 text-lg leading-8">
+                    Thank you for taking the time to remember Pranee,
+                    his journey, his creativity,
+                    and the love he shared with everyone around him.
+                </p>
 
-        </p>
+                <div class="mt-20">
+                    <span class="text-brand-gold text-sm tracking-[0.5em] uppercase">
+                        The End
+                    </span>
+                </div>
 
-        <blockquote class="font-serif italic text-2xl text-white">
+            </div>
 
-            "Home is where love never leaves."
+        </section>
 
-        </blockquote>
+        <!-- ========================= -->
+        <!-- Final Tribute -->
+        <!-- ========================= -->
 
-    </div>
-    <!-- ========================= -->
-<!-- Family Gallery -->
-<!-- ========================= -->
+        <section id="tribute" class="min-h-screen flex items-center justify-center px-6 py-24 bg-brand-dark">
 
-<div class="mb-24">
+            <div class="max-w-3xl mx-auto text-center">
 
-    <div class="text-center mb-12">
+                <!-- Heading -->
 
-        <span class="text-[11px] tracking-[0.4em] text-brand-gold uppercase">
+                <h2 class="text-5xl md:text-6xl font-serif font-light text-white mb-8">
+                    Forever Remembered
+                </h2>
 
-            Family Album
+                <!-- Gold Divider -->
 
-        </span>
+                <div class="w-20 h-[1px] bg-brand-gold/40 mx-auto mb-10"></div>
 
-        <h3 class="text-3xl font-serif text-white mt-4">
+                <!-- Quote -->
 
-            Moments That Will Always Be Home
+                <blockquote class="text-2xl md:text-3xl font-serif italic text-neutral-300 leading-relaxed mb-10">
+                    "Some people leave quietly,
+                    yet the memories they create
+                    continue to speak."
+                </blockquote>
 
-        </h3>
+                <!-- Thank You -->
 
-    </div>
+                <p class="text-neutral-400 text-lg leading-8 max-w-2xl mx-auto">
+                    Thank you for taking the time to remember Linse.
 
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                    May his kindness, creativity and beautiful spirit
+                    continue to inspire everyone whose lives he touched.
+                </p>
 
-        <img src="assets/family/withsibymom.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                <!-- Decorative Divider -->
 
-        <img src="assets/family/3bro.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
-        
-        <img src="assets/family/withalekutty.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
-         
-         <video controls class="rounded-xl">
-            <source src="assets/videos/video1.mp4" type="video/mp4">
-         </video>
+                <div class="mt-20 flex items-center justify-center">
 
-         <img src="assets/family/withgrand.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
-        
-        <img src="assets/family/ansu.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    <div class="w-16 h-px bg-brand-gold/30"></div>
 
-        <img src="assets/family/4imag.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    <span class="mx-5 text-brand-gold text-2xl">❦</span>
 
-        <video controls class="rounded-xl">
-            <source src="assets/videos/video4.mp4" type="video/mp4">
-        </video>
+                    <div class="w-16 h-px bg-brand-gold/30"></div>
 
-        <img src="assets/family/ammachi.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                </div>
 
-        <img src="assets/family/leon.jpg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                <!-- Signature -->
 
-        <video controls class="rounded-xl">
-            <source src="assets/videos/video2.mp4" type="video/mp4">
-        </video>
+                <div class="mt-10">
 
-        <img src="assets/family/beach.jpeg" class="rounded-xl hover:scale-105 transition duration-500 cursor-pointer" loading="lazy">
+                    <p class="font-serif italic text-brand-gold text-2xl">
+                        In Loving Memory
+                    </p>
 
-        
-    </div>
+                    <p class="mt-3 tracking-[0.45em] uppercase text-neutral-500 text-sm">
+                        LINSE FRANCIS LAL
+                    </p>
 
-</div>
-          <!-- ========================= -->
-<!-- Final Tribute -->
-<!-- ========================= -->
+                    <p class="mt-3 text-neutral-600">
+                        26 December 1998 — 1 June 2023
+                    </p>
 
-<section id="tribute"
-class="min-h-screen flex items-center justify-center px-6 py-24">
+                </div>
 
-    <div class="max-w-3xl mx-auto text-center">
+            </div>
 
-        <img
-            src="assets/portraits/redshirt.jpeg"
-            alt="Linse"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-12 border border-white/10">
+        </section>
 
-        <h2 class="text-5xl md:text-6xl font-serif text-white mb-8">
+        <footer class="py-10 text-center border-t border-white/5">
 
-            Thank You
-
-        </h2>
-
-        <blockquote class="text-2xl font-serif italic text-neutral-300 leading-relaxed mb-12">
-
-            "Some people leave quietly,
-            yet the memories they create
-            continue to speak."
-
-        </blockquote>
-
-        <p class="text-neutral-400 text-lg leading-8">
-
-            Thank you for taking the time to remember Pranee,
-            his journey, his creativity,
-            and the love he shared with everyone around him.
-
-        </p>
-
-        <div class="mt-20">
-
-            <span class="text-brand-gold text-sm tracking-[0.5em] uppercase">
-
-                The End
-
-            </span>
-
-        </div>
-
-    </div>
-
-</section>
-<!-- ========================= -->
-<!-- Final Tribute -->
-<!-- ========================= -->
-
-<section id="tribute"
-class="min-h-screen flex items-center justify-center px-6 py-24 bg-brand-dark">
-
-    <div class="max-w-3xl mx-auto text-center">
-
-        <!-- Final Portrait -->
-
-        <img
-            src="assets/portraits/sky.jpg"
-            alt="Linse"
-            class="w-72 h-72 object-cover rounded-full mx-auto mb-12 border border-white/10 shadow-2xl">
-
-        <!-- Heading -->
-
-        <h2 class="text-5xl md:text-6xl font-serif font-light text-white mb-8">
-
-            Forever Remembered
-
-        </h2>
-
-        <!-- Gold Divider -->
-
-        <div class="w-20 h-[1px] bg-brand-gold/40 mx-auto mb-10"></div>
-
-        <!-- Quote -->
-
-        <blockquote
-            class="text-2xl md:text-3xl font-serif italic text-neutral-300 leading-relaxed mb-10">
-
-            "Some people leave quietly,
-            yet the memories they create
-            continue to speak."
-
-        </blockquote>
-
-        <!-- Thank You -->
-
-        <p
-            class="text-neutral-400 text-lg leading-8 max-w-2xl mx-auto">
-
-            Thank you for taking the time to remember Linse.
-
-            May his kindness, creativity and beautiful spirit
-            continue to inspire everyone whose lives he touched.
-
-        </p>
-
-        <!-- Decorative Divider -->
-
-        <div class="mt-20 flex items-center justify-center">
-
-            <div class="w-16 h-px bg-brand-gold/30"></div>
-
-            <span class="mx-5 text-brand-gold text-2xl">❦</span>
-
-            <div class="w-16 h-px bg-brand-gold/30"></div>
-
-        </div>
-
-        <!-- Signature -->
-
-        <div class="mt-10">
-
-            <p class="font-serif italic text-brand-gold text-2xl">
-
-                In Loving Memory
-
+            <p class="text-neutral-600 text-sm">
+                "A life beautifully lived will always be beautifully remembered."
             </p>
 
-            <p class="mt-3 tracking-[0.45em] uppercase text-neutral-500 text-sm">
+        </footer>
 
-                LINSE FRANCIS LAL
-
-            </p>
-
-            <p class="mt-3 text-neutral-600">
-
-                26 December 1998 — 1 June 2023
-
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-<footer class="py-10 text-center border-t border-white/5">
-
-    <p class="text-neutral-600 text-sm">
-
-        "A life beautifully lived will always be beautifully remembered."
-
-    </p>
-
-</footer>
-
-
-        
     </main>
 
     <script src="js/main.js"></script>

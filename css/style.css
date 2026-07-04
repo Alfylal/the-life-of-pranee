@@ -1,0 +1,130 @@
+/* Base styles & optimizations */
+body {
+  background-color: #0B0B0D;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+@keyframes scroll-down {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  30% {
+    opacity: 1;
+  }
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(12px);
+    opacity: 0;
+  }
+}
+
+.scroll-dot {
+  animation: scroll-down 2.5s cubic-bezier(0.25, 1, 0.5, 1) infinite;
+}
+
+@keyframes bounce-slow {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(6px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounce-slow 2.5s ease-in-out infinite;
+}
+
+.portrait-placeholder {
+  background: linear-gradient(135deg, rgba(20, 20, 22, 0.8) 0%, rgba(11, 11, 13, 1) 100%);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-placeholder::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(212, 175, 55, 0.05) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+@keyframes cinematic-zoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.02);
+  }
+}
+
+.animate-cinematic-zoom {
+  animation: cinematic-zoom 20s cubic-bezier(0.25, 1, 0.5, 1) forwards;
+}
+
+.engineering-visual {
+  display: grid;
+  gap: 1.1rem;
+  width: 100%;
+}
+
+.engineering-visual__featured,
+.engineering-visual__card {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 22px;
+  overflow: hidden;
+  background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+  box-shadow: 0 24px 60px -30px rgba(0, 0, 0, 0.9);
+}
+
+.engineering-visual__featured {
+  padding: 0.85rem;
+}
+
+.engineering-visual__card {
+  padding: 0.7rem;
+}
+
+.engineering-visual__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  transition: transform 650ms ease;
+}
+
+.engineering-visual__image--contain {
+  object-fit: contain;
+  background: rgba(9, 9, 11, 0.85);
+}
+
+.engineering-visual__featured:hover .engineering-visual__image,
+.engineering-visual__card:hover .engineering-visual__image {
+  transform: scale(1.015);
+}
+
+.engineering-visual__supporting {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (max-width: 768px) {
+  .engineering-visual__supporting {
+    grid-template-columns: 1fr;
+  }
+
+  .engineering-visual__featured {
+    padding: 0.7rem;
+  }
+
+  .engineering-visual__card {
+    padding: 0.6rem;
+  }
+}
